@@ -11,6 +11,7 @@ You shoudl be able to just clone this, rename it to whatever you want, and start
 * [eslint](http://eslint.org/)
 * [postcss](http://postcss.org/)
 	* _including the plugins_ `simplevars`, `nested`, `cssnext`
+* [http-server](https://github.com/indexzero/http-server)
 * [rollup-plugin-replace](https://github.com/rollup/rollup-plugin-replace) (for easy NODE_ENV)
 
 ## How it works
@@ -21,6 +22,6 @@ You shoudl be able to just clone this, rename it to whatever you want, and start
 * `npm run build` builds everything in `src` into `dist/bundle.js`
 * `dist/index.html` loads `dist/bundle.js`
 
-## Extras
+## Tasks
 
-* `npm run dev` runs `rollup-watch` and `livereload` so that changes are auto-reloaded in the browser (configured in `src/index.js`)
+* `npm run dev` runs `rollup-watch`, `livereload`, and `http-server`. You can go to `http://localhost:8080` in the browser to view your app. Any changes to files in `/src` or `/dist` will automatically rebuild and/or reload.
